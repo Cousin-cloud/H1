@@ -9,7 +9,7 @@ Full-stack standalone app for Joinery + Metal plant planning with 3 shifts, Supa
 
 ## Setup
 1. Create a Supabase project.
-2. Run `supabase/schema.sql` then `supabase/seed.sql` in SQL Editor.
+2. Run `supabase/schema.sql` then `supabase/seed.sql` in SQL Editor (seed includes examples for all core tables).
 3. Create users in Supabase Auth and map roles in `user_roles` table.
 4. Backend env (`backend/.env`):
    - `SUPABASE_URL=...`
@@ -52,3 +52,10 @@ compare demand vs monthly/stretch and set status green/amber/red
 - Failed rows are persisted in `upload_error_logs` with full reason.
 - Demand is decomposed to daily records for accurate monthly split.
 - Designed for high-volume aggregation via indexed dimensions.
+
+
+## Dashboard Features
+- Scenario runner (Confirmed / Confirmed+Probable / All).
+- Status heatmap (green/amber/red workload mix).
+- Plant comparison chart (demand vs capacity).
+- Operation drilldown table with stretch-capacity risk status.
