@@ -1,0 +1,4 @@
+Division,Plant Type,Project Name,Client,Forecast Type,Operation,Required Man Hours,Production Start Date,Production End Date
+Retail,Joinery,Store Fitout A,BrandX,Confirmed,Milling,240,2026-05-01,2026-05-10
+Hospitality,Metal,Hotel Lobby,HotelCo,Probable,Metal Fabrication,320,2026-05-03,2026-05-20
+Retail,Joinery,Invalid Date,BrandY,Potential,Assembly,100,2026-06-15,2026-06-01
